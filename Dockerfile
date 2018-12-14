@@ -11,4 +11,7 @@ RUN apk update && \
 		cd htslib && autoheader && autoconf && ./configure && \
 		make && make install && cd ../ && \
 		pip3.6 install --upgrade pip && \
+		pip3.6 install numpy && \
+		pip3.6 install matplotlib && \
+		pip3.6 install scipy && \
 		pip3.6 install nanopack
